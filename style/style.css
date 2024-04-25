@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 3000px;
+}
+
+@font-face {
+    font-family: "MaidenCrimes";
+    src: url(/assets/fonts/MaidenCrimes-WRPE.ttf);
+}
+
+@font-face {
+    font-family: "Borcer";
+    src: url(/assets/fonts/Borcer-L3lAG.otf);
+}
+
+#color{
+    color: red;
+}
+
+header{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav ul{
+    display: flex;
+    gap: 2em;
+    
+}
+
+#nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Borcer";
+}
+
+#logo{
+    font-family: "MaidenCrimes";
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#segunda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+   margin-top: 50px;
+}
+
+#segunda h1{
+    font-size: 5rem;
+    align-items: center;
+    font-family: "Borcer";
+    
+}
+
+#segunda .boxes{
+    display: flex;
+    align-items: safe;
+    flex-direction: column;
+    border: 1px solid #000000;
+    padding: 1.5rem;
+    gap: 20px;
+    background-color: #000000;
+}
+
+#segunda .boxes .border{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border : 1px solid black;
+    padding: 10px;
+    background-color: #ffffff;
+    gap: 15px;
+}
+
+#segunda .boxes .border input{
+    width: 20px;
+    height: 20px;
+    
+}
+
+p{
+    font-size: 40px;
+    
+}
+
+@media screen and (max-width: 600px)  {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav ul{
+        display: none;
+    }
+
+    #segunda h1{
+        width: 80%;
+    }
+
+    .boxes{
+        width: 80%;
+    }
+
+    img{
+        width: 80%;
+    }
+
+    #segunda .boxes .border input{
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    p{
+        font-size: 30px;
+        
+    }
+
+}
